@@ -18,14 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- owl_carousel_link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -70,43 +65,95 @@
                 <p class="title-head">PORTFOLIO</p>
                 <h2>Recent <span class="grad-color">Works</span></h2>
                 <p>Explore my recent projects, showcasing innovative and responsive designs that elevate user
-                    experiences through intuitive front-end development.</p>
+                experiences through intuitive front-end development.</p>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
-            <div class="work-carousel">
-                    <!-- <div class="col-md-4">
+            <div class="work-carousel wrapper">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
                         <a href="#">
-                            <div class="card work-card">
-                                <img src="https://techcrunch.com/wp-content/uploads/2023/11/Sam-Altman-OpenAI.jpg?w=1390&crop=1"
-                                    class="card-img-top" alt="...">
+                            <div class="card" style="width: 26rem; background-color: transparent; border: none;">
+                                <img src="images/work-card-img-1.png" class="card-img-top" alt="..." style="max-width: 100%; height: 320px; border-radius: 10px; object-fit: cover; object-position: center;">
                                 <div class="card-body">
-                                    <p class="white-50-color">Bootstrap, JavaScript, & Node Js</p>
-                                    <h4>Responsive E-commerce Website</h4>
+                                  <p class="card-text white-50-color text-sm-start p-0">Bootstrap, JavaScript, & Node Js</p>
+                                  <h5 class="card-title">Responsive E-commerce Website</h5>
                                 </div>
-                            </div>
+                              </div>
                         </a>
-                    </div> -->
-                    <div id="owl-demo" class="owl-carousel owl-theme">
-          
-                        <div class="item"><h1>1</h1></div>
-                        <div class="item"><h1>2</h1></div>
-                        <div class="item"><h1>3</h1></div>
-                        <div class="item"><h1>4</h1></div>
-                        <div class="item"><h1>5</h1></div>
-                        <div class="item"><h1>6</h1></div>
-                        <div class="item"><h1>7</h1></div>
-                        <div class="item"><h1>8</h1></div>
-                        <div class="item"><h1>9</h1></div>
-                        <div class="item"><h1>10</h1></div>
-                        <div class="item"><h1>11</h1></div>
-                        <div class="item"><h1>12</h1></div>
-                       
                     </div>
-                
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card" style="width: 26rem; background-color: transparent; border: none;">
+                                <img src="images/work-card-img-2.png" class="card-img-top" alt="..." style="max-width: 100%; height: 320px; border-radius: 10px; object-fit: cover; object-position: center;">
+                                <div class="card-body">
+                                  <p class="card-text white-50-color text-sm-start">Bootstrap, JavaScript, & Node Js</p>
+                                  <h5 class="card-title">Responsive E-commerce Website</h5>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card" style="width: 26rem; background-color: transparent; border: none;">
+                                <img src="images/work-card-img-3.png" class="card-img-top" alt="..." style="max-width: 100%; height: 320px; border-radius: 10px; object-fit: cover; object-position: center;">
+                                <div class="card-body">
+                                  <p class="card-text white-50-color text-sm-start">Bootstrap, JavaScript, & Node Js</p>
+                                  <h5 class="card-title">Responsive E-commerce Website</h5>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card" style="width: 26rem; background-color: transparent; border: none;">
+                                <img src="images/work-card-img-1.png" class="card-img-top" alt="..." style="max-width: 100%; height: 320px; border-radius: 10px; object-fit: cover; object-position: center;">
+                                <div class="card-body">
+                                  <p class="card-text white-50-color text-sm-start">Bootstrap, JavaScript, & Node Js</p>
+                                  <h5 class="card-title">Responsive E-commerce Website</h5>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card" style="width: 26rem; background-color: transparent; border: none;">
+                                <img src="images/work-card-img-2.png" class="card-img-top" alt="..." style="max-width: 100%; height: 320px; border-radius: 10px; object-fit: cover; object-position: center;">
+                                <div class="card-body">
+                                  <p class="card-text white-50-color text-sm-start">Bootstrap, JavaScript, & Node Js</p>
+                                  <h5 class="card-title">Responsive E-commerce Website</h5>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- recent-works-section -->
+
+        <div class="work-exp-section">
+            <div class="section-title wrapper">
+                <p class="title-head">RESUME</p>
+                <h2>Let Me Introduce <span class="grad-color">Myself</span></h2>
+                <p>Great power comes with great responsibility🔥</p>
+            </div>
+
+            <div class="work-btn-group">
+                <button class="btn active-work" type="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">About Me</button>
+                <button class="btn" type="button" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Experience</button>
+                <button class="btn" type="button" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Skills</button>
+                <button class="btn" type="button" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">Certificates</button>
+            </div>
+
 
 
 
@@ -117,14 +164,10 @@
 
     </div>
 
-    <!-- owl_carousel_link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- custom_JS -->
-    <script src="JS/main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap_js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -135,6 +178,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+     <!-- custom_JS -->
+     <script src="JS/main.js"></script>
 
 </body>
 
