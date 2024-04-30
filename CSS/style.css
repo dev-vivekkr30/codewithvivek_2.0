@@ -86,16 +86,21 @@ a:hover{
     color: var(--white-color);
 }
 
-.strok-text{
-    color: #fff;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.4px;
-    -webkit-text-stroke-color: #fff;
+.coder-name{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.coder-name .strok-text{
+    color: var(--white-color);
+    letter-spacing: 4px;
+    margin: 0px;
+    line-height: 128px;
 }
 
 .wrapper{
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 124px;
+    padding-bottom: 124px;
 }
 /* gradient-color-class */
 
@@ -126,8 +131,8 @@ a:hover{
 }
 
 .section-title{
-    width: 60%;
     margin: auto;
+    padding: 64px;
 }
 
 /* button-class */
