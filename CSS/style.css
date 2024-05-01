@@ -11,16 +11,17 @@
 :root{
     --black-color : #101010;
     --black-2: #181A1C;
-    --gray-color: #262629;
+    /* --gray-color: #262629; */
     --white-color: #FFFFFF;
     --white-50-color: rgba(255, 255, 255, 0.50);
     --white-25-color: rgba(255, 255, 255, 0.25);
-    --grad-color: linear-gradient(90deg, #FE7F2D, #FFBF46);
+    --primary-color:#b7f400;
     --primary-font: 'DM Sans', sans-serif;
 }
 
 body{
     background-color: var(--black-color);
+    background-color:linear-gradient(#e66465, #9198e5);
 }
 
 /* heading_class */
@@ -124,8 +125,8 @@ a:hover{
     color: var(--gray-color);
 }
 
-.grad-color{
-    background: var(--grad-color);
+.primary-color{
+    background: var(--primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -140,31 +141,54 @@ a:hover{
 .btn{
     padding: 8px 32px;
     border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--black-2);
+    margin: 10px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 0.5s;
+}
+.btn-white{
+    padding: 8px 32px;
+    border-radius: 50px;
+    background-color: var(--white-25-color);
+    border: 1px solid transparent;
     color: var(--white-color);
     margin: 10px;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: all 0.5s;
 }
 
-.btn:active{
+.btn:active, .btn-white:active{
     outline: none;
     offset: 0;
 }
-.btn-w-5{
-    background-color: var(--white-50-color);
-}
 .btn:hover{
     border-radius: 50px;
-    background: var(--grad-color);
+    background-color: transparent;
+    border-color: var(--white-color);
     color: var(--white-color);
+    transition: all 0.5s;
+}
+.btn-white:hover{
+    border-radius: 50px;
+    background-color: var(--white-50-color);
+    border-color: var(--white-color);
+    color: var(--white-color);
+    transition: all 0.5s;
 }
 
-.btn-w{
+/* .btn-w{
     background-color: var(--white-color);
     color: var(--black-color);
-}
+    transition: all 0.5s;
+} */
 
 /* recent-projects-section */
 
@@ -178,83 +202,30 @@ a:hover{
     position: relative;
 }
 
-.recent-projects-section .work-carousel{
-    padding-bottom: 90px;
+.recent-projects-section .project-card .card{
+    background-color: transparent;
+    border-color: var(--white-25-color) !important;
+}
+.recent-projects-section .project-card .card .project-img img{
+    border-radius: 10px;
+}
+.recent-projects-section .project-card .card .card-title{
+    font-size: 24px;
+    font-weight: 700;
 }
 
-/* .swiper {
-    width: 100%;
-    height: auto;
-  } */
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    margin-top: 32px !important;
-    top: 305px  !important;
-}
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    content: 'prev';
-    font-size: 24px !important;
-    color: var(--black-2);
-    background-color: var(--white-color);
-    padding: 18px;
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    line-height: 0.65 !important;
-    border-radius: 50px;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 24px !important;
-    color: var(--black-2);
-    background-color: var(--white-color);
-    padding: 18px;
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    line-height: 0.65 !important;
-    border-radius: 50px;
-}
-.swiper-button-next{
-    position: absolute !important;
-    left: 75px !important;
-}
-
-.work-btn-group{
-    margin: auto;
-    background-color: var(--white-25-color);
-    border-radius: 50px;
-    padding: 0;
-    width: fit-content;
-}
-
-.work-btn-group .btn{
-    margin: 0;
-    width: 240px;
-    padding: 15px 25px !important;
-    border-radius: 75px;
-    font-weight: 400;
+.recent-projects-section .project-card .card .tech-used .tech{
+    font-size: 12px;
     font-family: var(--primary-font);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 32px;
 }
 
-/* .work-btn-group .active-work{
-    background: var(--grad-color);
-} */
-
-
-
-
-
-
-
-
-
-
+.recent-projects-section .project-card .card .card-text{
+    font-size: 16px;
+    color: var(--white-50-color);
+    font-weight: 300;
+}
 
