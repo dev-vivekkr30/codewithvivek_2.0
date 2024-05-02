@@ -21,7 +21,6 @@
 
 body{
     background-color: var(--black-color);
-    background-color:linear-gradient(#e66465, #9198e5);
 }
 
 /* heading_class */
@@ -125,6 +124,7 @@ a:hover{
     color: var(--gray-color);
 }
 
+
 .primary-color{
     background: var(--primary-color);
     -webkit-background-clip: text;
@@ -147,7 +147,7 @@ a:hover{
     font-size: 18px;
     border: 1px solid transparent;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     transition: all 0.5s;
 }
@@ -160,7 +160,7 @@ a:hover{
     margin: 10px;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     transition: all 0.5s;
 }
@@ -205,7 +205,9 @@ a:hover{
 .recent-projects-section .project-card .card{
     background-color: transparent;
     border-color: var(--white-25-color) !important;
+    transition: all 0.5s;
 }
+
 .recent-projects-section .project-card .card .project-img img{
     border-radius: 10px;
 }
@@ -215,17 +217,29 @@ a:hover{
 }
 
 .recent-projects-section .project-card .card .tech-used .tech{
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--primary-font);
     color: var(--white-color);
     border: 1px solid var(--primary-color);
     padding: 4px 8px;
     border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
-
 .recent-projects-section .project-card .card .card-text{
     font-size: 16px;
     color: var(--white-50-color);
     font-weight: 300;
 }
-
+.work-exp-section .work-card .card{
+    background-color: var(--black-2);
+    padding: 12px;
+    border-radius: 10px;
+    font-family: var(--primary-font);
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.work-exp-section .work-card .card:hover{
+    border-color: var(--white-50-color);
+}
