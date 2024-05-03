@@ -99,8 +99,8 @@ a:hover{
 }
 
 .wrapper{
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /* gradient-color-class */
 
@@ -196,6 +196,7 @@ a:hover{
     background-color: var(--black-2);
     border-radius: 20px;
     position: relative;
+    box-shadow: 10px -5px 50px #000;
 }
 
 .recent-projects-section .section-title{
@@ -239,6 +240,7 @@ a:hover{
     border-color: transparent;
     cursor: pointer;
     transition: all 0.5s;
+    box-shadow: 10px -5px 50px #000;
 }
 .work-exp-section .work-card .card:hover{
     border-color: var(--white-50-color);
@@ -266,4 +268,26 @@ a:hover{
 .review-section .review-card .card .card-body p{
     font-weight: 300;
     font-size: 16px;
+}
+
+.download-resume{
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-radius: 10px;
+    padding: 48px;
+    
+}
+
+.download-resume .download-btn{
+    background-color: var(--black-2);
+    color: var(--primary-color);
+    border-color: var(--black-2);
+    font-size: 28px;
+    text-wrap: nowrap;
+}
+.download-resume .download-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--black-2);
+    border-color: var(--black-2);
 }
