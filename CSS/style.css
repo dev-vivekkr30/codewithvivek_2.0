@@ -241,6 +241,7 @@ a:hover{
     cursor: pointer;
     transition: all 0.5s;
     box-shadow: 10px -5px 50px #000;
+    height: 100%;
 }
 .work-exp-section .work-card .card:hover{
     border-color: var(--white-50-color);
@@ -290,4 +291,9 @@ a:hover{
     background-color: var(--primary-color);
     color: var(--black-2);
     border-color: var(--black-2);
+}
+
+.connect{
+    font-family: var(--primary-font);
+    color: var(--white-color);
 }
