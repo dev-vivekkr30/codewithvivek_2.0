@@ -75,5 +75,9 @@
     .recent-projects-section .section-title {
         padding: 24px;
     }
+    .recent-projects-section .project-card .card .card-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
 }
 
