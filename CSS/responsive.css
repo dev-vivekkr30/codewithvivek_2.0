@@ -18,7 +18,7 @@
         line-height: normal;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     .coder-name .strok-text{
         font-size: 54px;
         line-height: normal;
@@ -35,3 +35,45 @@
         padding: 8px 24px;
     }
 }
+
+@media only screen and (max-width: 460px) {
+    .hero-section{
+        text-align: center;
+    }
+    .hero-section h4{
+        font-size: 18px;
+    }
+    .wrapper {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .coder-name .strok-text {
+        font-size: 42px;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    .coder-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        color: var(--white-color);
+        font-family: var(--primary-font);
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .download-resume{
+        padding: 32px;
+        flex-direction: column;
+    }
+
+    .recent-projects-section .section-title {
+        padding: 24px;
+    }
+}
+
