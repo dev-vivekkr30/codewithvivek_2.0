@@ -18,7 +18,7 @@
         line-height: normal;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     .coder-name .strok-text{
         font-size: 54px;
         line-height: normal;
