@@ -24,9 +24,9 @@
         line-height: normal;
     }
 
-    .recent-projects-section .section-title{
+    /* .recent-projects-section .section-title{
         padding: 32px;
-    }
+    } */
     .recent-projects-section .project-card .card .tech-used .tech{
         font-size: 12px;
     }
